@@ -9,6 +9,7 @@ body {
     position: relative;
     overflow: hidden; /* Hide overflow from sliding images */
     display: flex;
+    z-index: 2;
    
     align-items: center;
     justify-content: center;
@@ -19,11 +20,20 @@ body {
     position: absolute;
     top:0;
     width: 100%;
-    height: 100%;
+    height: 120%;
     display: flex;
     /* border: 10px solid blue; */
     
 }
+
+.backImage{
+    position: absolute;
+    width: 50%;
+    height: 110%;
+    right: 0px;
+}
+
+
 
 .slide {
     min-width: fit-content; /* Default: Full width for small screens */
@@ -44,6 +54,8 @@ body {
     object-fit:cover; /* Ensures images fill the space without distortion */
     display: block;
 }
+
+
 
 /* Sliding Animation */
 /* @keyframes slide {

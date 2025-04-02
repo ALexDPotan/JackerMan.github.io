@@ -31,7 +31,7 @@ function updateSlide() {
 // Auto-slide every 5 seconds
 setInterval(() => {
     
-    currentSlide = (currentSlide+1) % (slides.length -1);
+    currentSlide = (currentSlide+1) % (slides.length);
     
     if(isMouseOnHero){
         console.log("mouse enterd hero");
