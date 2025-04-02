@@ -11,6 +11,29 @@ document.querySelectorAll('.preview-item').forEach(item => {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const splash = document.getElementById("splash-screen");
+    const mainContent = document.getElementById("main-content");
+  
+    // Option 1: Fixed delay (e.g., 2 seconds)
+    setTimeout(() => {
+      splash.classList.add("hidden");
+      mainContent.classList.add("loaded");
+      // Optionally remove splash from DOM after transition
+      setTimeout(() => splash.remove(), 500);
+    }, 2000);
+  
+    // Option 2: Wait for full page load (uncomment to use)
+    /*
+    window.addEventListener("load", () => {
+      splash.classList.add("hidden");
+      mainContent.classList.add("loaded");
+      setTimeout(() => splash.remove(), 500);
+    });
+    */
+  });
+
 const hero = document.querySelector('.hero');
 let isMouseOnHero = false;
 
@@ -56,3 +79,4 @@ hero.addEventListener('mouseleave', () => {
 });
 
 updateSlide();
+
