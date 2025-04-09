@@ -58,6 +58,7 @@ body {
     .slide {
         min-width: 34%; /* Half width for laptops and bigger screens */
     }
+    
    
 }
 
@@ -136,6 +137,9 @@ body {
     }
     #splash-screen h1 {
         font-size: 2px; /* Reduced font size for mobile */
+    }
+    .hero{
+        height: 70vh;
     }
 }
 
